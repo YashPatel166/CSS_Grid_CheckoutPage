@@ -1,0 +1,125 @@
+.test{
+    display:grid;
+    gap: 1.5rem;
+    grid-template-columns: 300px 300px ;
+    grid-template-rows: 150px 150px 190px;
+    padding-block: 2rem;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+.items-list{
+    grid-column-start: 1;
+    grid-column-end:2 ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 1rem;
+    background-color: antiquewhite;
+}
+
+.name{
+    padding: 1rem;
+    background-color: antiquewhite;
+}
+
+.payment{
+    padding: 1rem;
+    background-color: antiquewhite;
+}
+
+.checkout{
+    grid-column-start: 1;
+    grid-column-end:3 ;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 2rem;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+
+h2{
+color:indianred;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-se;
+}
+
+
+.user-input {
+    background-color: rgba(0,0,0,0);
+    border: 2px #885a2d solid;
+    padding: 8px;
+    border-radius: 80px;
+    width: 85%;
+    text-indent: 16px;
+    font-size: 16px;
+}
+
+
+.tables {
+    width: 100%;
+    max-width: 500px;
+  }
+
+
+  .head{
+    padding:10px;
+  }
+  
+  .tables td:last-child {
+    text-align: right;
+  }
+  
+  .final {
+    font-weight: bold;
+  }
+
+  .button1 {
+    background-color: #deb993;
+    border: none;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 80px;
+    font-size: 16px;
+  }
+
+  .items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  border-bottom: 2px solid #DDB892;
+  display: grid;
+
+  padding: 10px 0;
+  
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: 
+    "quantity title   price"
+    "quantity options price";
+
+  row-gap: 8px;
+
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item-quantity {
+  grid-area: quantity;
+}
+
+.item-title {
+  grid-area: title;
+  font-weight: bold;
+}
+
+.item-price {
+  grid-area: price;
+  font-weight: bold;
+}
